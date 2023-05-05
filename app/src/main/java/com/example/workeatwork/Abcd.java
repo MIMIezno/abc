@@ -1,4 +1,4 @@
 package com.example.workeatwork;
 
-public class Menu {
+public class Abcd {
 }
