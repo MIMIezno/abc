@@ -4,6 +4,92 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Onboarding2">
+    tools:context=".Onboarding2"
+    android:background="@drawable/bg1">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="178dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="112dp"
+        android:text="How much activities do you normally engage in? "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnNot"
+        android:layout_width="347dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="146dp"
+        android:background="@drawable/btn_bg"
+        android:text="Not Very Active"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <Button
+        android:id="@+id/btnAct"
+        android:layout_width="347dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="146dp"
+        android:background="@drawable/btn_bg"
+        android:text="Active"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLight" />
+
+    <Button
+        android:id="@+id/btnVery"
+        android:layout_width="347dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="146dp"
+        android:background="@drawable/btn_bg"
+        android:text="Very Active"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAct" />
+
+    <Button
+        android:id="@+id/btnLight"
+        android:layout_width="347dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="146dp"
+        android:background="@drawable/btn_bg"
+        android:text="Lightly Active"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnNot" />
+
+    <LinearLayout
+        android:layout_width="59dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="328dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/circle_btn"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnVery">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_next" />
+
+
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

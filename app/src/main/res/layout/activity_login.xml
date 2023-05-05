@@ -48,13 +48,14 @@
         android:layout_width="349dp"
         android:layout_height="67dp"
         android:layout_marginStart="14dp"
-        android:layout_marginTop="240dp"
+        android:layout_marginTop="236dp"
         android:layout_marginEnd="15dp"
         android:background="@drawable/custom_input"
         android:drawableStart="@drawable/ic_email"
         android:hint="@string/email"
         android:paddingStart="12dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

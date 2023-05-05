@@ -27,7 +27,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <Button
-        android:id="@+id/btnlose"
+        android:id="@+id/btnLose"
         android:layout_width="347dp"
         android:layout_height="59dp"
         android:layout_marginStart="146dp"
@@ -41,7 +41,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <Button
-        android:id="@+id/btngain"
+        android:id="@+id/btnGain"
         android:layout_width="347dp"
         android:layout_height="59dp"
         android:layout_marginStart="146dp"
@@ -52,10 +52,10 @@
         android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnlose" />
+        app:layout_constraintTop_toBottomOf="@+id/btnLose" />
 
     <Button
-        android:id="@+id/btnmuscle"
+        android:id="@+id/btnMuscle"
         android:layout_width="347dp"
         android:layout_height="59dp"
         android:layout_marginStart="146dp"
@@ -66,10 +66,10 @@
         android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btngain" />
+        app:layout_constraintTop_toBottomOf="@+id/btnGain" />
 
     <Button
-        android:id="@+id/btnmodify"
+        android:id="@+id/btnModify"
         android:layout_width="347dp"
         android:layout_height="59dp"
         android:layout_marginStart="146dp"
@@ -80,10 +80,10 @@
         android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnmuscle" />
+        app:layout_constraintTop_toBottomOf="@+id/btnMuscle" />
 
     <Button
-        android:id="@+id/btnmaintain"
+        android:id="@+id/btnMaintain"
         android:layout_width="347dp"
         android:layout_height="59dp"
         android:layout_marginStart="146dp"
@@ -94,14 +94,25 @@
         android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnmodify" />
+        app:layout_constraintTop_toBottomOf="@+id/btnModify" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="288dp"
-        tools:layout_editor_absoluteY="658dp" />
+    <LinearLayout
+        android:layout_width="59dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="328dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/circle_btn"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMaintain">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_next" />
+
+
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
