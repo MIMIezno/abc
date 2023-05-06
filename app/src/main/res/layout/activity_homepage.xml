@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg"
+    android:background="@drawable/bg2"
     tools:context=".Homepage">
     // notif linear
     <LinearLayout
@@ -60,10 +60,16 @@
                 android:layout_height="62dp"
                 app:srcCompat="@drawable/ic_dumb" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Workouts" />
+            <RelativeLayout
+                android:layout_width="113dp"
+                android:layout_height="65dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Workouts" />
+            </RelativeLayout>
         </LinearLayout>
 
         <LinearLayout
@@ -78,8 +84,8 @@
                 app:srcCompat="@drawable/ic_meal" />
 
             <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="113dp"
+                android:layout_height="65dp"
                 android:gravity="center_vertical">
 
                 <TextView

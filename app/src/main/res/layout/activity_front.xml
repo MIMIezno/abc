@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Front"
     android:orientation="vertical"
-    android:background="@drawable/bg"
+    android:background="@drawable/bg2"
     android:gravity="center">
 
 
