@@ -7,19 +7,20 @@
     android:background="@drawable/bg2"
     tools:context=".Homepage">
     // notif linear
+
     <LinearLayout
         android:layout_width="75dp"
-        android:layout_height="50dp"
+        android:layout_height="75dp"
 
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="45dp">
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="40dp">
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="75dp"
             android:layout_height="50dp"
-            app:srcCompat="@drawable/ic_notif"
-            android:gravity="center"/>
+            android:gravity="center"
+            app:srcCompat="@drawable/ic_notif" />
 
     </LinearLayout>
 
@@ -27,72 +28,100 @@
         android:layout_width="334dp"
         android:layout_height="250dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="179dp">
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="133dp">
 
+        //goals
 
         <LinearLayout
             android:layout_width="210dp"
-            android:layout_height="83dp"
+            android:layout_height="40dp"
             android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/imageView3"
-                android:layout_width="57dp"
-                android:layout_height="62dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 app:srcCompat="@drawable/goal_icon" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Goals" />
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
 
+            <RelativeLayout
+                android:layout_width="113dp"
+                android:layout_height="40dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Goals"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+            //workouts
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="210dp"
-            android:layout_height="83dp"
+            android:layout_height="40dp"
             android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/imageView4"
-                android:layout_width="57dp"
-                android:layout_height="62dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 app:srcCompat="@drawable/ic_dumb" />
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
 
             <RelativeLayout
                 android:layout_width="113dp"
-                android:layout_height="65dp"
+                android:layout_height="40dp"
                 android:gravity="center_vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Workouts" />
+                    android:text="Workouts"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
             </RelativeLayout>
         </LinearLayout>
+        //meal plan
 
         <LinearLayout
             android:layout_width="210dp"
-            android:layout_height="83dp"
+            android:layout_height="40dp"
             android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/imageView5"
-                android:layout_width="57dp"
-                android:layout_height="62dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 app:srcCompat="@drawable/ic_meal" />
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
 
             <RelativeLayout
                 android:layout_width="113dp"
-                android:layout_height="65dp"
+                android:layout_height="40dp"
                 android:gravity="center_vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
-                    android:text="Meal Plan" />
+                    android:text="Meal Plan"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
 
             </RelativeLayout>
         </LinearLayout>
