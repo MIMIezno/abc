@@ -15,9 +15,5 @@ public class Homepage extends AppCompatActivity {
         setContentView(R.layout.activity_homepage);
     }
 
-    TextView textView = findViewById(R.id.textView);
-    String text = "1,200\n";
-    SpannableString spannableString = new SpannableString(text);
-    spannableString.setSpan(new AbsoluteSizeSpan(24, true), 0, 5, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
-    textView.setText(spannableString);
+
 }

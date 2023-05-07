@@ -7,7 +7,7 @@
     <stroke
         android:color="@android:color/black"
         android:width="3dp"
-        android:dashWidth="20"
-        android:dashGap="20" />
+        android:dashWidth="20dp"
+        android:dashGap="20dp" />
 
 </shape>
