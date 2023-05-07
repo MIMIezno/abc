@@ -8,7 +8,7 @@ import android.text.Spanned;
 import android.widget.TextView;
 
 public class Homepage extends AppCompatActivity {
-
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
