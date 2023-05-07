@@ -25,11 +25,11 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="334dp"
-        android:layout_height="250dp"
+        android:layout_width="365dp"
+        android:layout_height="146dp"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="133dp">
+        tools:layout_editor_absoluteY="136dp">
 
         //goals
 
@@ -122,6 +122,109 @@
                     android:text="Meal Plan"
                     android:textColor="@color/white"
                     android:textSize="20sp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="195dp"
+        android:layout_height="68dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="201dp"
+        tools:layout_editor_absoluteY="31dp">
+
+        <RelativeLayout
+            android:layout_width="113dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hello User!"
+                android:textColor="@color/white"
+                android:textSize="23sp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/person_profile_icon" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="412dp"
+        android:layout_height="11dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="282dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#ffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="352dp"
+        android:layout_height="330dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="293dp">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="17dp"
+            android:paddingLeft="20dp"
+            android:text="Current Calories : 1,900" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/textView16"
+                    android:layout_width="220dp"
+                    android:layout_height="220dp"
+                    android:layout_marginLeft="93dp"
+                    android:background="@drawable/circle_btn" />
+                <FrameLayout
+                    android:layout_width="220dp"
+                    android:layout_height="220dp"
+                    android:layout_marginLeft="93dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/circle_border"
+                        android:padding="10dp" /> <!-- Add padding to create a second circle effect -->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="\t\t\t\t\t1, 200\n\t\t\tRemaining\n utin lisod ni diri"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                </FrameLayout>
 
             </RelativeLayout>
         </LinearLayout>
