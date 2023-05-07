@@ -2,7 +2,9 @@ package com.example.workeatwork;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 public class Login extends AppCompatActivity {
 
@@ -10,5 +12,10 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+    }
+
+    public void openContinue(View view) {
+        Intent intent = new Intent(Login.this, Continue.class);
+        startActivity(intent);
     }
 }
