@@ -6,14 +6,15 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg2"
     tools:context=".Homepage">
-    // notif linear
+
 
     <LinearLayout
         android:layout_width="75dp"
         android:layout_height="75dp"
 
         tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="40dp">
+        tools:layout_editor_absoluteY="40dp"
+        tools:ignore="MissingConstraints">
 
         <ImageView
             android:id="@+id/imageView"
@@ -29,9 +30,10 @@
         android:layout_height="146dp"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="136dp">
+        tools:layout_editor_absoluteY="136dp"
+        tools:ignore="MissingConstraints">
 
-        //goals
+
 
         <LinearLayout
             android:layout_width="210dp"
@@ -62,7 +64,7 @@
                     android:textSize="20sp" />
 
             </RelativeLayout>
-            //workouts
+
         </LinearLayout>
 
         <LinearLayout
@@ -94,7 +96,6 @@
 
             </RelativeLayout>
         </LinearLayout>
-        //meal plan
 
         <LinearLayout
             android:layout_width="210dp"
@@ -132,7 +133,8 @@
         android:layout_height="68dp"
         android:orientation="horizontal"
         tools:layout_editor_absoluteX="201dp"
-        tools:layout_editor_absoluteY="31dp">
+        tools:layout_editor_absoluteY="31dp"
+        tools:ignore="MissingConstraints">
 
         <RelativeLayout
             android:layout_width="113dp"
@@ -152,7 +154,8 @@
             android:id="@+id/imageView5"
             android:layout_width="75dp"
             android:layout_height="match_parent"
-            app:srcCompat="@drawable/person_profile_icon" />
+            app:srcCompat="@drawable/person_profile_icon"
+            tools:ignore="DuplicateIds" />
 
     </LinearLayout>
 
@@ -162,7 +165,8 @@
         android:gravity="center"
         android:orientation="horizontal"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="282dp">
+        tools:layout_editor_absoluteY="282dp"
+        tools:ignore="MissingConstraints">
 
         <View
             android:layout_width="match_parent"
@@ -175,7 +179,8 @@
         android:layout_height="330dp"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="293dp">
+        tools:layout_editor_absoluteY="293dp"
+        tools:ignore="MissingConstraints">
 
         <Space
             android:layout_width="match_parent"
