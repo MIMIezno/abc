@@ -14,7 +14,7 @@ public class Front extends AppCompatActivity {
         setContentView(R.layout.activity_front);
     }
 //open register
-    public void openActivity(View view) {
+    public void openRegister(View view) {
         Intent intent = new Intent(Front.this, Register.class);
         startActivity(intent);
     }
