@@ -340,17 +340,34 @@
                 android:orientation="horizontal"
                 android:layout_marginLeft="60dp">
 
-                <ImageView
+                <RelativeLayout
                     android:layout_width="80dp"
-                    android:layout_height="90dp"
-                    android:src="@drawable/blurr" />
+                    android:layout_height="90dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/blurr"
+                        android:contentDescription="imagebtn" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:onClick="openBlog"
+                        android:contentDescription="selectblogbtn"/>
+
+                </RelativeLayout>
 
                 <ImageView
                     android:layout_width="90dp"
                     android:layout_height="40dp"
                     android:layout_marginLeft="-84dp"
                     android:layout_marginTop="29dp"
-                    android:src="@drawable/edit_document_icon" />
+                    android:src="@drawable/edit_document_icon"
+                    android:contentDescription="toblog" />
 
             </LinearLayout>
             <LinearLayout
