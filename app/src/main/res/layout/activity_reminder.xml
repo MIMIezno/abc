@@ -65,21 +65,80 @@
         android:layout_height="509dp"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="-3dp"
-        tools:layout_editor_absoluteY="222dp">
+        tools:layout_editor_absoluteY="225dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="64dp">
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView65"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:text="6/10 task completed"
+                android:textStyle="bold" />
 
             <CheckBox
                 android:id="@+id/checkBox"
-                android:layout_width="165dp"
-                android:layout_height="38dp"
-                android:layout_marginStart="40dp"
-                android:layout_marginTop="20dp"
-                android:button="@drawable/circle_checkbox_selector"
-                android:text="CheckBox" />
+                android:layout_width="354dp"
+                android:layout_height="66dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/task_bg"
+                android:button="@drawable/custom_checkbox"
+                android:buttonTint="@color/black"
+                android:padding="10dp"
+                android:text="First Workout" />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:padding="10dp"
+                android:layout_width="354dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="160dp"
+                android:button="@drawable/custom_checkbox"
+                android:buttonTint="@color/black"
+                android:text=" First Workout" />
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:padding="10dp"
+                android:layout_width="354dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="250dp"
+                android:button="@drawable/custom_checkbox"
+                android:buttonTint="@color/black"
+                android:text=" First Workout" />
+
+            <CheckBox
+                android:id="@+id/checkBox4"
+                android:padding="10dp"
+                android:layout_width="354dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="340dp"
+                android:button="@drawable/custom_checkbox"
+                android:buttonTint="@color/black"
+                android:text=" First Workout" />
+
+            <CheckBox
+                android:id="@+id/checkBox5"
+                android:layout_width="354dp"
+                android:layout_height="65dp"
+                android:padding="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="430dp"
+                android:button="@drawable/custom_checkbox"
+                android:buttonTint="@color/black"
+                android:text=" First Workout" />
+
+
         </RelativeLayout>
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
