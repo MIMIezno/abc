@@ -22,4 +22,9 @@ public class Homepage extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void openMore(View view) {
+        Intent intent = new Intent(Homepage.this, More.class);
+        startActivity(intent);
+    }
+
 }

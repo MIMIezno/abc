@@ -319,12 +319,27 @@
             tools:ignore="MissingConstraints">
 
 
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/blurr"
-                android:layout_alignTop="@id/bulletImageView"
-                android:layout_marginLeft="160dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/blurr"
+                    android:layout_marginLeft="160dp"/>
+
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="158dp"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="openMore"
+                    android:contentDescription="menu"/>
+
+            </RelativeLayout>
 
             <ImageView
                     android:id="@+id/bulletImageView"
@@ -377,15 +392,30 @@
                 android:layout_marginLeft="150dp"
                 android:layout_marginTop="-15dp">
 
-
-                <ImageView
+                <FrameLayout
                     android:layout_width="50dp"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/blurr"
-                    android:layout_marginTop="-5dp"
-                    android:layout_alignTop="@id/bulletImageView" />
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/blurr"
+                        android:layout_marginTop="-5dp"
+                        android:layout_alignTop="@+id/bulletImageView" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:onClick="openLogin"
+                        android:contentDescription="calendar"/>
+
+                </FrameLayout>
 
                 <ImageView
+                    android:id="@+id/bulletImageView1"
                     android:layout_width="50dp"
                     android:layout_height="20dp"
                     android:layout_marginLeft="-50.2dp"
@@ -393,6 +423,7 @@
                     android:src="@drawable/calendar_date_icon" />
 
             </LinearLayout>
+
         </LinearLayout>
 
 
