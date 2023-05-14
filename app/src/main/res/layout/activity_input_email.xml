@@ -70,7 +70,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@drawable/ic_check"
-        android:onClick="openBlog"/>
+        android:onClick="openHomepage"
+        android:contentDescription="gotohomepage"/>
 
 
   </LinearLayout>
