@@ -8,17 +8,16 @@
     tools:context=".Account">
 
 
-
     <LinearLayout
+        android:id="@+id/linearLayout4"
         android:layout_width="52dp"
         android:layout_height="55dp"
         android:layout_marginStart="24dp"
         android:background="@drawable/circle_btn"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="26dp"
-        tools:layout_editor_absoluteX="10dp"
-        tools:ignore="MissingConstraints">
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="26dp">
 
         <ImageView
             android:layout_width="34dp"
@@ -32,9 +31,10 @@
     <LinearLayout
         android:layout_width="411dp"
         android:layout_height="635dp"
+        android:layout_marginTop="15dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="96dp">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
 
         <ImageView
             android:id="@+id/imageView13"
@@ -43,49 +43,49 @@
             app:srcCompat="@drawable/person_profile_icon" />
 
         <TextView
-            android:layout_marginTop="10dp"
-            android:gravity="center"
             android:id="@+id/name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
             android:text="Name: " />
 
         <TextView
             android:id="@+id/Changephoto"
-            android:layout_marginTop="10dp"
-            android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
             android:text="Change Profile photo" />
 
         <View
-            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="4dp"
+            android:layout_marginTop="10dp"
             android:background="#ffffff" />
 
         <TextView
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="10dp"
             android:id="@+id/textView34"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
             android:text="GENERAL INFO" />
 
         <View
-            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="4dp"
+            android:layout_marginTop="10dp"
             android:background="#ffffff" />
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/first_name"
-            android:hint="@string/first_name"
-            android:layout_width="335dp"
-            android:layout_height="36dp"
+            android:layout_width="374dp"
+            android:layout_height="51dp"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="15dp"
             android:background="@drawable/custom_enter"
+            android:hint="@string/first_name"
             android:paddingStart="12dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.201" />
@@ -93,10 +93,11 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/last_name"
-            android:layout_width="335dp"
-            android:layout_height="36dp"
+
+            android:layout_width="374dp"
+            android:layout_height="51dp"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="15dp"
             android:background="@drawable/custom_enter"
             android:hint="@string/last_name"
             android:paddingStart="12dp"
@@ -105,37 +106,35 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/email_add"
-            android:hint="@string/email_add"
-            android:layout_width="335dp"
-            android:layout_height="36dp"
-            android:layout_marginTop="30dp"
+            android:layout_width="374dp"
+            android:layout_height="51dp"
             android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
             android:background="@drawable/custom_enter"
+            android:hint="@string/email_add"
             android:paddingStart="12dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.201"
-            />
+            app:layout_constraintHorizontal_bias="0.201" />
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/pass_word"
-            android:hint="@string/pass_word"
-            android:layout_width="335dp"
-            android:layout_height="36dp"
-            android:layout_marginTop="30dp"
+            android:layout_width="374dp"
+            android:layout_height="51dp"
             android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
             android:background="@drawable/custom_enter"
+            android:hint="@string/pass_word"
             android:paddingStart="12dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.201"
-            />
+            app:layout_constraintHorizontal_bias="0.201" />
 
         <Button
             android:id="@+id/btnlogout"
             android:layout_width="350dp"
             android:layout_height="50dp"
+            android:layout_marginLeft="28dp"
             android:layout_marginTop="29dp"
-            android:text="Log Out"
-            android:layout_marginLeft="28dp"/>
+            android:text="Log Out" />
 
 
     </LinearLayout>
@@ -144,7 +143,9 @@
         android:id="@+id/textView29"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="271dp"
         android:text="Account"
-        tools:layout_editor_absoluteX="89dp"
-        tools:layout_editor_absoluteY="42dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
