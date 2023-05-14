@@ -10,34 +10,43 @@
 
 
     <LinearLayout
-        android:id="@+id/linearLayout4"
-        android:layout_marginTop="30dp"
-        android:layout_width="52dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="24dp"
-        android:background="@drawable/circle_btn"
-        android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="26dp">
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal">
 
-        <ImageView
-            android:layout_width="34dp"
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="52dp"
             android:layout_height="55dp"
-            android:layout_gravity="center"
-            android:src="@drawable/ic_prev" />
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/circle_btn"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="26dp">
 
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_prev" />
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:text="Account" />
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView29"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="180dp"
-        android:text="Account"
-        tools:layout_editor_absoluteX="171dp"
-        tools:layout_editor_absoluteY="76dp" />
+
 
     <LinearLayout
         android:layout_width="411dp"
