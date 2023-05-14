@@ -11,6 +11,7 @@
         android:layout_width="52dp"
         android:layout_height="55dp"
         android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/circle_btn"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,6 +32,7 @@
         android:layout_height="wrap_content"
         android:text="Blog"
         android:layout_marginLeft="100dp"
+        android:layout_marginTop="40dp"
         tools:layout_editor_absoluteX="171dp"
         tools:layout_editor_absoluteY="76dp" />
 
@@ -275,7 +277,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="91dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -298,8 +301,9 @@
             </LinearLayout>
 
             <View
-                android:layout_width="match_parent"
+                android:layout_width="500dp"
                 android:layout_height="3dp"
+                android:layout_marginLeft="-50dp"
                 android:background="#ffffff" />
 
             <LinearLayout
