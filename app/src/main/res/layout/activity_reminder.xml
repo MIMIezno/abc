@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,6 +12,7 @@
         android:layout_width="52dp"
         android:layout_height="55dp"
         android:layout_marginStart="24dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/circle_btn"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,13 +26,15 @@
             android:src="@drawable/ic_prev" />
 
 
+
     </LinearLayout>
 
     <RelativeLayout
         android:id="@+id/relativeLayout6"
         android:layout_width="411dp"
         android:layout_height="112dp"
-        android:layout_marginTop="21dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="-79dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
@@ -65,8 +68,9 @@
     <LinearLayout
         android:layout_width="414dp"
         android:layout_height="509dp"
-        android:layout_marginTop="11dp"
+        android:layout_marginTop="200dp"
         android:orientation="vertical"
+        android:layout_marginLeft="-410dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout6">
 
@@ -227,11 +231,10 @@
 
     <TextView
         android:id="@+id/textView66"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Reminders"
-        tools:layout_editor_absoluteX="87dp"
-        tools:layout_editor_absoluteY="45dp"
-        tools:ignore="MissingConstraints" />
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="-330dp"
+        android:text="Reminders" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
