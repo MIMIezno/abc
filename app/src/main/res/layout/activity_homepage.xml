@@ -417,7 +417,7 @@
                         android:background="@android:color/transparent"
                         android:clickable="true"
                         android:focusable="true"
-                        android:onClick="openLogin"
+                        android:onClick="openReminder"
                         android:contentDescription="calendar"/>
 
                 </FrameLayout>
