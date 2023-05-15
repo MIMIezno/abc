@@ -27,4 +27,8 @@ public class Homepage extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void openReminder(View view) {
+        Intent intent = new Intent(Homepage.this, Reminder.class);
+        startActivity(intent);
+    }
 }
