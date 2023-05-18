@@ -17,7 +17,11 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="26dp"
         tools:layout_editor_absoluteX="10dp"
-        tools:ignore="MissingConstraints">
+        tools:ignore="MissingConstraints"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="openHomepage"
+        android:contentDescription="return">
 
         <ImageView
             android:layout_width="34dp"
@@ -108,7 +112,8 @@
                 android:id="@+id/recipe"
                 android:layout_width="match_parent"
                 android:layout_height="74dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:contentDescription="recipes">
 
                 <ImageView
                     android:id="@+id/imageView7"
@@ -130,15 +135,16 @@
         <LinearLayout
             android:layout_width="410dp"
             android:layout_height="70dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="openHistory">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="74dp"
                 android:orientation="horizontal"
-                android:clickable="true"
-                android:focusable="true"
-                android:onClick="openHistory">
+                >
 
                 <ImageView
                     android:id="@+id/imageView8"
@@ -161,15 +167,16 @@
         <LinearLayout
             android:layout_width="410dp"
             android:layout_height="70dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="openReminder">
 
             <LinearLayout
                 android:layout_width="410dp"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:clickable="true"
-                android:focusable="true"
-                android:onClick="openReminder">
+                >
 
                 <ImageView
                     android:id="@+id/imageView10"
@@ -243,6 +250,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
+
 
                 <ImageView
                     android:id="@+id/imageView12"
