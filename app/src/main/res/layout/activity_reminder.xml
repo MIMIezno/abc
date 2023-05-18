@@ -17,7 +17,11 @@
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="26dp">
+        tools:layout_editor_absoluteY="26dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="openHomepage"
+        android:contentDescription="return">
 
         <ImageView
             android:layout_width="34dp"

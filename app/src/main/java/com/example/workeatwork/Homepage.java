@@ -31,4 +31,20 @@ public class Homepage extends AppCompatActivity {
         Intent intent = new Intent(Homepage.this, Reminder.class);
         startActivity(intent);
     }
+
+    public void openAccount(View view) {
+        Intent intent = new Intent(Homepage.this, Account.class);
+        startActivity(intent);
+    }
+
+    public void openWorkout(View view) {
+        Intent intent = new Intent(Homepage.this, Workout.class);
+        startActivity(intent);
+    }
+
+    public void openRecipes(View view) {
+        Intent intent = new Intent(Homepage.this, Recipes.class);
+        startActivity(intent);
+    }
+
 }
