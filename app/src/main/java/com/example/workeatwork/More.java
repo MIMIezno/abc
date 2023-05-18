@@ -48,4 +48,9 @@ public class More extends AppCompatActivity {
         Intent intent = new Intent(More.this, Login.class);
         startActivity(intent);
     }
+
+    public void openHomepage(View view) {
+        Intent intent = new Intent(More.this, Homepage.class);
+        startActivity(intent);
+    }
 }

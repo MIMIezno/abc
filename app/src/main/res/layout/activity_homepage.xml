@@ -15,7 +15,11 @@
         android:layout_marginTop="30dp"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="40dp"
-        tools:ignore="MissingConstraints">
+        tools:ignore="MissingConstraints"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="openReminder"
+        android:contentDescription="notif">
 
         <ImageView
             android:id="@+id/imageView"
@@ -30,10 +34,9 @@
         android:layout_width="240dp"
         android:layout_height="130dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="136dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="50dp"
+        android:layout_marginBottom="5dp"
         tools:ignore="MissingConstraints">
 
 
@@ -71,9 +74,12 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="210dp"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
+            android:layout_width="145dp"
+            android:layout_height="49dp"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="openWorkout">
 
             <ImageView
                 android:id="@+id/imageView4"
@@ -101,9 +107,12 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="210dp"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
+            android:layout_width="145dp"
+            android:layout_height="49dp"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="openRecipes">
 
             <ImageView
                 android:id="@+id/imageView5"
@@ -139,7 +148,10 @@
         android:layout_marginTop="-200dp"
         tools:layout_editor_absoluteX="201dp"
         tools:layout_editor_absoluteY="31dp"
-        tools:ignore="MissingConstraints">
+        tools:ignore="MissingConstraints"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="openAccount">
 
         <RelativeLayout
             android:layout_width="113dp"

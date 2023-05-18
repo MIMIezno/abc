@@ -24,7 +24,11 @@
             android:orientation="vertical"
             app:layout_constraintStart_toStartOf="parent"
             tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteY="26dp">
+            tools:layout_editor_absoluteY="26dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="openHomepage"
+            android:contentDescription="return">
 
             <ImageView
                 android:layout_width="34dp"
@@ -154,7 +158,10 @@
             android:layout_height="50dp"
             android:layout_marginLeft="28dp"
             android:layout_marginTop="29dp"
-            android:text="Log Out" />
+            android:text="Log Out"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="openLogin"/>
 
 
     </LinearLayout>
