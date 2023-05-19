@@ -40,32 +40,17 @@
         tools:layout_editor_absoluteY="-2dp"
         tools:ignore="MissingConstraints">
 
-        <LinearLayout
-            android:layout_width="470dp"
-            android:layout_height="665dp"
-            android:layout_gravity="left"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="528dp"
-                android:layout_height="747dp"
-                android:layout_gravity="left"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="60dp"
-                android:layout_weight="1"
-                android:alpha="0.4"
-                app:srcCompat="@drawable/logo" />
-
-        </LinearLayout>
     </LinearLayout>
 
     <TextView
         android:id="@+id/textView30"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:text="More"
         android:layout_marginLeft="-400dp"
         android:layout_marginTop="45dp"
+        android:text="More"
+        android:textSize="20sp"
+        android:textStyle="bold"
         tools:ignore="MissingConstraints" />
 
     <LinearLayout
@@ -97,7 +82,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:text="Account" />
+                android:text="Account"
+                android:textSize="20sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -128,7 +114,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="25dp"
                     android:layout_weight="1"
-                    android:text="My Recipes" />
+                    android:text="My Recipes"
+                    android:textSize="20sp" />
             </LinearLayout>
         </LinearLayout>
 
@@ -157,9 +144,28 @@
                     android:id="@+id/textView20"
                     android:layout_width="275dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
                     android:layout_weight="1"
                     android:text="History"
-                    android:layout_marginTop="25dp"/>
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="470dp"
+                    android:layout_height="665dp"
+                    android:layout_gravity="left"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="528dp"
+                        android:layout_height="747dp"
+                        android:layout_gravity="left"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="60dp"
+                        android:layout_weight="1"
+                        android:alpha="0.4"
+                        app:srcCompat="@drawable/logo" />
+
+                </LinearLayout>
 
             </LinearLayout>
         </LinearLayout>
@@ -189,9 +195,10 @@
                     android:id="@+id/textView21"
                     android:layout_width="266dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
                     android:layout_weight="0"
                     android:text="Reminders"
-                    android:layout_marginTop="25dp"/>
+                    android:textSize="20sp" />
 
                 <ImageView
                     android:id="@+id/imageView2"
@@ -231,9 +238,10 @@
                     android:id="@+id/textView22"
                     android:layout_width="265dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
                     android:layout_weight="0"
                     android:text="Workouts"
-                    android:layout_marginTop="20dp"/>
+                    android:textSize="20sp" />
             </LinearLayout>
 
         </LinearLayout>
@@ -263,9 +271,10 @@
                     android:id="@+id/textView25"
                     android:layout_width="271dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
                     android:layout_weight="0"
                     android:text="Settings"
-                    android:layout_marginTop="20dp"/>
+                    android:textSize="20sp" />
             </LinearLayout>
 
         </LinearLayout>

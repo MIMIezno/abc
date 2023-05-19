@@ -31,23 +31,22 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/textView83"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="39dp"
+        android:layout_weight="0"
         android:text="Blog"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="40dp"
-        tools:layout_editor_absoluteX="171dp"
-        tools:layout_editor_absoluteY="76dp" />
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <LinearLayout
-        android:layout_width="403dp"
-        android:layout_height="588dp"
-        android:orientation="vertical"
-        android:layout_marginTop="100dp"
-        android:layout_marginLeft="-200dp"
-        tools:layout_editor_absoluteX="7dp"
-        tools:layout_editor_absoluteY="121dp">
+        android:layout_width="400dp"
+        android:layout_height="532dp"
+        android:layout_marginLeft="-123dp"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -59,7 +58,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Breakfast" />
+                android:text="Breakfast"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView15"
@@ -116,7 +117,9 @@
                     android:layout_width="377dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Lunch" />
+                    android:text="Lunch"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
 
                 <TextView
@@ -175,7 +178,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Dinner" />
+                    android:text="Dinner"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView24"
@@ -236,7 +241,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Snack" />
+                    android:text="Snack"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView27"
@@ -281,8 +288,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="91dp"
-            android:orientation="vertical"
-            android:layout_marginTop="10dp">
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -294,7 +301,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Water" />
+                    android:text="Water"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView32"
@@ -365,7 +374,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Exercise" />
+                    android:text="Exercise"
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/textView37"
@@ -384,7 +394,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="59dp"
             android:orientation="vertical">
 
             <LinearLayout

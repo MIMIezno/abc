@@ -207,9 +207,10 @@
         <TextView
             android:id="@+id/textView15"
             android:layout_width="match_parent"
-            android:layout_height="17dp"
+            android:layout_height="wrap_content"
             android:paddingLeft="20dp"
-            android:text="Current Calories : 1,900" />
+            android:text="Current Calories : 1,900"
+            android:textSize="16sp" />
 
         <LinearLayout
             android:layout_width="match_parent"

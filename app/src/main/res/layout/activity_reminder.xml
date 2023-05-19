@@ -235,10 +235,12 @@
 
     <TextView
         android:id="@+id/textView66"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="50dp"
+        android:layout_width="89dp"
+        android:layout_height="32dp"
         android:layout_marginLeft="-330dp"
-        android:text="Reminders" />
+        android:layout_marginTop="50dp"
+        android:text="Reminders"
+        android:textSize="16sp"
+        android:textStyle="bold" />
 
 </LinearLayout>

@@ -9,11 +9,12 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="178dp"
-        android:layout_height="38dp"
+        android:layout_width="219dp"
+        android:layout_height="43dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="112dp"
         android:text="How much activities do you normally engage in? "
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
