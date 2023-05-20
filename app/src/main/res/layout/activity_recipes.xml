@@ -60,7 +60,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginStart="10dp"
-                tools:srcCompat="@drawable/breakfast" />
+                android:src="@drawable/breakfast" />
 
             <TextView
                 android:id="@+id/textView35"
@@ -118,7 +118,7 @@
                 android:layout_width="244dp"
                 android:layout_height="149dp"
                 android:layout_marginStart="10dp"
-                tools:srcCompat="@drawable/snacks" />
+                android:src="@drawable/snacks" />
 
             <TextView
                 android:id="@+id/textView45"
@@ -178,7 +178,7 @@
                 android:layout_height="109dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="15dp"
-                tools:srcCompat="@drawable/lunch" />
+                android:src="@drawable/lunch" />
 
             <TextView
                 android:id="@+id/textView39"
@@ -235,11 +235,10 @@
 
             <ImageView
                 android:id="@+id/imageView21"
-                android:layout_width="243dp"
-                android:layout_height="109dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="15dp"
-                tools:srcCompat="@drawable/dinner" />
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/dinner"
+                android:scaleType="fitXY" />
 
             <TextView
                 android:id="@+id/textView47"
@@ -285,6 +284,7 @@
                 app:srcCompat="@drawable/ic_next" />
 
         </RelativeLayout>
+
     </LinearLayout>
 
     <LinearLayout
