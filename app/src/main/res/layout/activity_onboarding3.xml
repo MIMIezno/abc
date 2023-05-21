@@ -27,6 +27,7 @@
         android:layout_marginStart="69dp"
         android:layout_marginTop="21dp"
         android:text="Male"
+        android:textColorHighlight="@color/black"
         android:textColorLink="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
@@ -37,6 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="69dp"
         android:text="Female"
+        android:textColorHighlight="@color/black"
         android:textColorLink="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnmale" />

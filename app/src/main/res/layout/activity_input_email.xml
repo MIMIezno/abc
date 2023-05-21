@@ -20,6 +20,7 @@
       android:background="@drawable/custom_input"
       android:drawableStart="@drawable/ic_lock"
       android:hint="@string/password"
+      android:inputType="textPassword"
       android:paddingStart="12dp"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.478"
@@ -67,11 +68,12 @@
       app:layout_constraintTop_toTopOf="parent">
 
     <ImageView
+        android:id="@+id/Register"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/ic_check"
+        android:contentDescription="gotohomepage"
         android:onClick="openHomepage"
-        android:contentDescription="gotohomepage"/>
+        android:src="@drawable/ic_check" />
 
 
   </LinearLayout>
