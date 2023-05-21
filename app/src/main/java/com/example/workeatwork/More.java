@@ -19,6 +19,10 @@ public class More extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void openAccount2(View view) {
+        Intent intent = new Intent(More.this, Account2.class);
+        startActivity(intent);
+    }
     public void openRecipes(View view) {
         Intent intent = new Intent(More.this, Recipes.class);
         startActivity(intent);
@@ -53,4 +57,6 @@ public class More extends AppCompatActivity {
         Intent intent = new Intent(More.this, Homepage.class);
         startActivity(intent);
     }
+
+
 }

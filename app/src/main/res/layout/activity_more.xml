@@ -67,7 +67,7 @@
             android:orientation="horizontal"
             android:clickable="true"
             android:focusable="true"
-            android:onClick="openAccount">
+            android:onClick="openAccount2">
 
             <ImageView
                 android:id="@+id/imageView6"

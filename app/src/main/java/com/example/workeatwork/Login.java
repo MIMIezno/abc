@@ -22,7 +22,7 @@ public class Login extends AppCompatActivity {
         passwordEditText = findViewById(R.id.password);
     }
 
-    public void openContinue(View view) {
+    public void openHomepage(View view) {
         String email = emailEditText.getText().toString();
         String password = passwordEditText.getText().toString();
 
