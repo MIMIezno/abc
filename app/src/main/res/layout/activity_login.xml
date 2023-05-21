@@ -37,6 +37,7 @@
         android:background="@drawable/custom_input"
         android:drawableStart="@drawable/ic_lock"
         android:hint="@string/password"
+        android:inputType="textPassword"
         android:paddingStart="12dp"
         app:layout_constraintBottom_toTopOf="@+id/btn_login"
         app:layout_constraintEnd_toEndOf="parent"
