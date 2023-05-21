@@ -335,7 +335,7 @@
             android:orientation="vertical"
             tools:layout_editor_absoluteX="179dp"
             tools:layout_editor_absoluteY="541dp"
-            android:layout_marginLeft="160dp"
+            android:layout_marginLeft="150dp"
             android:layout_marginTop="-60dp"
             tools:ignore="MissingConstraints">
 
