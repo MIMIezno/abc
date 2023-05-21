@@ -66,7 +66,8 @@
                 android:layout_width="259dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="70dp"
-                tools:srcCompat="@drawable/legs" />
+                android:scaleType="fitXY"
+                android:src="@drawable/legs" />
 
             <TextView
                 android:id="@+id/textView76"
@@ -93,7 +94,8 @@
                 android:layout_height="13dp"
                 android:layout_marginStart="80dp"
                 android:layout_marginTop="100dp"
-                app:srcCompat="@drawable/ic_spark" />
+                app:srcCompat="@drawable/ic_spark"
+                app:tint="#FFD700"/>
 
             <ImageView
                 android:id="@+id/imageView46"
@@ -118,7 +120,8 @@
                 android:layout_width="259dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="70dp"
-                tools:srcCompat="@drawable/back" />
+                android:scaleType="fitXY"
+                android:src="@drawable/back" />
 
             <TextView
                 android:id="@+id/textView78"
@@ -145,7 +148,8 @@
                 android:layout_height="13dp"
                 android:layout_marginStart="80dp"
                 android:layout_marginTop="100dp"
-                app:srcCompat="@drawable/ic_spark" />
+                app:srcCompat="@drawable/ic_spark"
+                app:tint="#FFD700"/>
 
             <ImageView
                 android:id="@+id/imageView47"
@@ -171,7 +175,8 @@
                 android:layout_width="259dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="70dp"
-                tools:srcCompat="@drawable/arm" />
+                android:scaleType="fitXY"
+                android:src="@drawable/arm" />
 
             <TextView
                 android:id="@+id/textView80"
@@ -198,7 +203,8 @@
                 android:layout_height="13dp"
                 android:layout_marginStart="80dp"
                 android:layout_marginTop="100dp"
-                app:srcCompat="@drawable/ic_spark" />
+                app:srcCompat="@drawable/ic_spark"
+                app:tint="#FFD700"/>
 
             <ImageView
                 android:id="@+id/imageView48"
@@ -224,7 +230,8 @@
                 android:layout_width="259dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="70dp"
-                tools:srcCompat="@drawable/stomach" />
+                android:scaleType="fitXY"
+                android:src="@drawable/stomach" />
 
             <TextView
                 android:id="@+id/textView74"
@@ -233,7 +240,7 @@
                 android:layout_marginStart="80dp"
                 android:layout_marginTop="80dp"
                 android:textColor="@color/white"
-                android:text="STOMACH" />
+                android:text="CORE" />
 
             <TextView
                 android:id="@+id/textView75"
@@ -251,7 +258,8 @@
                 android:layout_height="13dp"
                 android:layout_marginStart="80dp"
                 android:layout_marginTop="100dp"
-                app:srcCompat="@drawable/ic_spark" />
+                app:srcCompat="@drawable/ic_spark"
+                app:tint="#FFD700"/>
 
             <ImageView
                 android:id="@+id/imageView45"
