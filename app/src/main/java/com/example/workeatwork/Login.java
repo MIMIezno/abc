@@ -59,7 +59,7 @@ public class Login extends AppCompatActivity {
                                     finish();
                                 }
                                 else{
-                                    Toast.makeText(Login.this, "Account Failed", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(Login.this, "Login Failed", Toast.LENGTH_SHORT).show();
                                 }
                             }
                         });

@@ -57,13 +57,13 @@ public class InputEmail extends AppCompatActivity {
                                 @Override
                                 public void onComplete(@NonNull Task<AuthResult> task) {
                                     if(task.isSuccessful()){
-                                        Toast.makeText(InputEmail.this, "Registration Successfully", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(InputEmail.this, "Registration Successful", Toast.LENGTH_SHORT).show();
                                         Intent intent = new Intent(InputEmail.this, Login.class);
                                         startActivity(intent);
                                         finish();
                                     }
                                         else{
-                                        Toast.makeText(InputEmail.this, "Registration Failed", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(InputEmail.this, "It must be 8 characters", Toast.LENGTH_SHORT).show();
                                     }
                                 }
                             });
