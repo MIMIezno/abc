@@ -76,7 +76,7 @@
                     android:layout_marginStart="185dp"
                     android:layout_marginTop="5dp"
                     android:textColor="@color/white"
-                    android:text=" Breakfast">
+                    android:text=" Breakfast"/>
 
             </FrameLayout>
             <TextView
@@ -147,7 +147,7 @@
                     android:layout_marginStart="199dp"
                     android:layout_marginTop="5dp"
                     android:textColor="@color/white"
-                    android:text=" Snacks">
+                    android:text=" Snacks"/>
 
             </FrameLayout>
             <TextView
@@ -217,7 +217,7 @@
                     android:layout_height="20dp"
                     android:layout_marginStart="205dp"                    android:layout_marginTop="5dp"
                     android:textColor="@color/white"
-                    android:text=" Lunch">
+                    android:text=" Lunch"/>
 
             </FrameLayout>
             <TextView
@@ -287,7 +287,7 @@
                     android:layout_marginStart="205dp"
                     android:layout_marginTop="5dp"
                     android:textColor="@color/white"
-                    android:text=" Dinner">
+                    android:text=" Dinner"/>
 
             </FrameLayout>
 
