@@ -82,7 +82,7 @@
         android:layout_marginStart="89dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="89dp"
-        android:text="Continue with Facebook "
+        android:text="Continue with Faacebook "
         app:icon="@drawable/facebook"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
