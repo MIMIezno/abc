@@ -92,7 +92,7 @@
         <RelativeLayout
             android:layout_width="384dp"
             android:layout_height="74dp"
-            android:layout_marginStart="13dp"
+            android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:background="@drawable/task_bg">
 
@@ -121,7 +121,7 @@
         <RelativeLayout
             android:layout_width="384dp"
             android:layout_height="74dp"
-            android:layout_marginStart="13dp"
+            android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:background="@drawable/task_bg">
 
@@ -150,7 +150,7 @@
         <RelativeLayout
             android:layout_width="384dp"
             android:layout_height="74dp"
-            android:layout_marginStart="13dp"
+            android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:background="@drawable/task_bg">
 
@@ -179,7 +179,7 @@
         <RelativeLayout
             android:layout_width="384dp"
             android:layout_height="74dp"
-            android:layout_marginStart="13dp"
+            android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:background="@drawable/task_bg">
 
@@ -207,7 +207,7 @@
         <RelativeLayout
             android:layout_width="384dp"
             android:layout_height="74dp"
-            android:layout_marginStart="13dp"
+            android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:background="@drawable/task_bg">
 
