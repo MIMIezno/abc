@@ -90,7 +90,7 @@
             android:textStyle="bold" />
 
         <RelativeLayout
-            android:layout_width="384dp"
+            android:layout_width="354dp"
             android:layout_height="74dp"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
@@ -111,7 +111,7 @@
                 android:id="@+id/imageView15"
                 android:layout_width="25dp"
                 android:layout_height="29dp"
-                android:layout_marginStart="340dp"
+                android:layout_marginStart="310dp"
                 android:layout_marginTop="30dp"
                 app:srcCompat="@drawable/edit_document_icon" />
 
@@ -119,7 +119,7 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:layout_width="384dp"
+            android:layout_width="354dp"
             android:layout_height="74dp"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
@@ -140,7 +140,7 @@
                 android:id="@+id/imageView28"
                 android:layout_width="25dp"
                 android:layout_height="29dp"
-                android:layout_marginStart="340dp"
+                android:layout_marginStart="310dp"
                 android:layout_marginTop="30dp"
                 app:srcCompat="@drawable/edit_document_icon" />
 
@@ -148,7 +148,7 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:layout_width="384dp"
+            android:layout_width="354dp"
             android:layout_height="74dp"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
@@ -170,14 +170,14 @@
                 android:id="@+id/imageView35"
                 android:layout_width="25dp"
                 android:layout_height="29dp"
-                android:layout_marginStart="340dp"
+                android:layout_marginStart="310dp"
                 android:layout_marginTop="30dp"
                 app:srcCompat="@drawable/edit_document_icon" />
 
         </RelativeLayout>
 
         <RelativeLayout
-            android:layout_width="384dp"
+            android:layout_width="354dp"
             android:layout_height="74dp"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
@@ -198,14 +198,14 @@
                 android:id="@+id/imageView36"
                 android:layout_width="25dp"
                 android:layout_height="29dp"
-                android:layout_marginStart="340dp"
+                android:layout_marginStart="310dp"
                 android:layout_marginTop="30dp"
                 app:srcCompat="@drawable/edit_document_icon" />
 
         </RelativeLayout>
 
         <RelativeLayout
-            android:layout_width="384dp"
+            android:layout_width="354dp"
             android:layout_height="74dp"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
@@ -226,7 +226,7 @@
                 android:id="@+id/imageView37"
                 android:layout_width="25dp"
                 android:layout_height="29dp"
-                android:layout_marginStart="340dp"
+                android:layout_marginStart="310dp"
                 android:layout_marginTop="30dp"
                 app:srcCompat="@drawable/edit_document_icon" />
 
