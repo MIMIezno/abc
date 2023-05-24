@@ -111,11 +111,10 @@
             android:id="@+id/first_name"
             android:layout_width="345dp"
             android:layout_height="50dp"
-            android:layout_marginStart="20dp"
             android:layout_marginTop="15dp"
+            android:layout_gravity="center"
             android:background="@drawable/custom_enter"
             android:hint="@string/first_name"
-            android:paddingStart="12dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.201" />
 
@@ -124,11 +123,10 @@
 
             android:layout_width="345dp"
             android:layout_height="50dp"
-            android:layout_marginStart="20dp"
             android:layout_marginTop="15dp"
+            android:layout_gravity="center"
             android:background="@drawable/custom_enter"
             android:hint="@string/last_name"
-            android:paddingStart="12dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.201" />
 
@@ -136,11 +134,10 @@
             android:id="@+id/email_add"
             android:layout_width="345dp"
             android:layout_height="51dp"
-            android:layout_marginStart="20dp"
+            android:layout_gravity="center"
             android:layout_marginTop="15dp"
             android:background="@drawable/custom_enter"
             android:hint="@string/email_add"
-            android:paddingStart="12dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.201" />
 
@@ -148,19 +145,18 @@
             android:id="@+id/pass_word"
             android:layout_width="345dp"
             android:layout_height="51dp"
-            android:layout_marginStart="20dp"
+            android:layout_gravity="center"
             android:layout_marginTop="15dp"
             android:background="@drawable/custom_enter"
             android:hint="@string/pass_word"
-            android:paddingStart="12dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.201" />
 
         <Button
             android:id="@+id/btnlogout"
             android:layout_width="289dp"
-            android:layout_height="46dp"
-            android:layout_marginLeft="50dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="64dp"
             android:layout_marginTop="29dp"
             android:clickable="true"
             android:focusable="true"
