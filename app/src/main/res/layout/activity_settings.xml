@@ -21,7 +21,8 @@
         tools:layout_editor_absoluteY="26dp"
         android:clickable="true"
         android:focusable="true"
-        android:onClick="openMore">
+        android:onClick="openMore"
+        android:contentDescription="return">
 
         <ImageView
             android:layout_width="34dp"
