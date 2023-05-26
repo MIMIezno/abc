@@ -67,7 +67,9 @@
                 android:layout_height="match_parent"
                 android:layout_marginStart="70dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/legs" />
+                android:src="@drawable/legs"
+                android:onClick="openLegsVideo"
+                android:contentDescription="legs"/>
 
             <TextView
                 android:id="@+id/textView76"
@@ -121,7 +123,9 @@
                 android:layout_height="match_parent"
                 android:layout_marginStart="70dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/back" />
+                android:src="@drawable/back"
+                android:onClick="openBackVideo"
+                android:contentDescription="back"/>
 
             <TextView
                 android:id="@+id/textView78"
@@ -176,7 +180,9 @@
                 android:layout_height="match_parent"
                 android:layout_marginStart="70dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/arm" />
+                android:src="@drawable/arm"
+                android:onClick="openArmsVideo"
+                android:contentDescription="arm"/>
 
             <TextView
                 android:id="@+id/textView80"
@@ -231,7 +237,9 @@
                 android:layout_height="match_parent"
                 android:layout_marginStart="70dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/stomach" />
+                android:src="@drawable/stomach"
+                android:onClick="openCoreVideo"
+                android:contentDescription="core"/>
 
             <TextView
                 android:id="@+id/textView74"
