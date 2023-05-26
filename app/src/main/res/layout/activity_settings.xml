@@ -59,8 +59,9 @@
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
             android:text="app preferences"
-            app:backgroundTint="@color/purple_700"
-            app:icon="@drawable/ic_app" />
+            app:backgroundTint="@color/purple_500"
+            app:icon="@drawable/ic_app"
+            android:onClick="showAppPreferencesText"/>
     </RelativeLayout>
 
     <RelativeLayout
@@ -77,8 +78,9 @@
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
             android:text="Help "
-            app:backgroundTint="@color/purple_700"
-            app:icon="@drawable/ic_help" />
+            app:backgroundTint="@color/purple_500"
+            app:icon="@drawable/ic_help"
+            android:onClick="showHelpText"/>
     </RelativeLayout>
 
     <RelativeLayout
@@ -95,8 +97,9 @@
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
             android:text="Contact us"
-            app:backgroundTint="@color/purple_700"
-            app:icon="@drawable/ic_contact" />
+            app:backgroundTint="@color/purple_500"
+            app:icon="@drawable/ic_contact"
+            android:onClick="showContactText"/>
 
     </RelativeLayout>
 
@@ -114,8 +117,9 @@
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
             android:text="Join the community"
-            app:backgroundTint="@color/purple_700"
-            app:icon="@drawable/ic_join" />
+            app:backgroundTint="@color/purple_500"
+            app:icon="@drawable/ic_join"
+            android:onClick="showJoinText"/>
     </RelativeLayout>
 
     <RelativeLayout
@@ -131,9 +135,10 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
-            android:text="Rate teh app"
-            app:backgroundTint="@color/purple_700"
-            app:icon="@drawable/ic_rate" />
+            android:text="Rate the app"
+            app:backgroundTint="@color/purple_500"
+            app:icon="@drawable/ic_rate"
+            android:onClick="showRateText"/>
 
 
     </RelativeLayout>
@@ -152,8 +157,9 @@
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
             android:text="Terms &amp; Conditions"
-            app:backgroundTint="@color/purple_700"
-            app:icon="@drawable/ic_term" />
+            app:backgroundTint="@color/purple_500"
+            app:icon="@drawable/ic_term"
+            android:onClick="showTermsText"/>
 
     </RelativeLayout>
 
