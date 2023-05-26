@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Food Item 1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        >
+
+        <!-- Food Image -->
+        <ImageView
+            android:id="@+id/foodImageView1"
+            android:layout_width="395dp"
+            android:layout_height="200dp"
+            android:src="@drawable/cocobanana"
+            android:scaleType="fitXY"
+            android:contentDescription="Food Image 1" />
+
+        <!-- Food Details -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="220dp"
+            android:layout_marginLeft="-400dp"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/foodTitleTextView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="COCO BANANA PROTEIN SMOOTHIE"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/foodDescriptionTextView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" (HIGH AND LOW CALORIE OPTIONS)"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- Bookmark Button -->
+        <ImageView
+            android:id="@+id/bookmarkButton1"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/saved_icon"
+            android:layout_marginTop="230dp"
+            android:onClick="onBookmarkButtonClick"
+            android:contentDescription="save"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+
