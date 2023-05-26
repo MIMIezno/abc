@@ -39,6 +39,9 @@
             android:name=".Blog"
             android:exported="false" />
         <activity
+            android:name=".Food"
+            android:exported="false" />
+        <activity
             android:name=".Homepage"
             android:exported="false" />
         <activity

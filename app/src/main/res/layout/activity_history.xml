@@ -1,277 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/historyLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/bg2"
-    tools:context=".History">
+    android:padding="16dp"
+    android:background="@drawable/bg2">
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="52dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="40dp"
-        android:background="@drawable/circle_btn"
-        android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="26dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:onClick="openHomepage"
-        android:contentDescription="return">
-
-        <ImageView
-            android:layout_width="34dp"
-            android:layout_height="55dp"
-            android:layout_gravity="center"
-            android:src="@drawable/ic_prev" />
-
-
-    </LinearLayout>
-
+    <!-- Title -->
     <TextView
-        android:id="@+id/imageView76"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="82dp"
-        android:layout_marginTop="-35dp"
-        android:text="MY HISTORY"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/linearLayout"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:text="Bookmarks List"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
 
-        <RelativeLayout
-            android:id="@+id/relativeLayout5"
-            android:layout_width="397dp"
-            android:layout_height="185dp"
-            android:layout_marginStart="7dp"
-            android:layout_marginTop="20dp">
+    <!-- Food Item Views -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:contentDescription="history">
 
+        <TextView
+            android:id="@+id/bookmarkedFoodsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:padding="8dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:gravity="start|top" />
 
-            <TextView
-                android:id="@+id/textView62"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="20dp"
-                android:text="1 May 2023"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/textView63"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="40dp"
-                android:text="Time" />
-
-            <TextView
-                android:id="@+id/textView64"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="80dp"
-                android:text="TYPE" />
-
-            <TextView
-                android:id="@+id/textView67"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="109dp"
-                android:text="CALORIES" />
-
-            <TextView
-                android:id="@+id/textView68"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="140dp"
-                android:text="TIME ENDED" />
-
-            <ImageView
-                android:id="@+id/imageView29"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="300dp"
-                android:layout_marginTop="150dp"
-                app:srcCompat="@drawable/ic_bookmark" />
-
-            <ImageView
-                android:id="@+id/imageView30"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="330dp"
-                android:layout_marginTop="150dp"
-                app:srcCompat="@drawable/ic_share" />
-
-            <ImageView
-                android:id="@+id/imageView31"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="360dp"
-                android:layout_marginTop="150dp"
-                app:srcCompat="@drawable/ic_delete" />
-
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="397dp"
-            android:layout_height="185dp"
-            android:layout_marginStart="7dp"
-            android:layout_marginTop="20dp">
-
-            <TextView
-                android:id="@+id/textView69"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="20dp"
-                android:text="1 May 2023"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/textView70"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="40dp"
-                android:text="Time" />
-
-            <TextView
-                android:id="@+id/textView71"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="80dp"
-                android:text="TYPE" />
-
-            <TextView
-                android:id="@+id/textView72"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="109dp"
-                android:text="CALORIES" />
-
-            <TextView
-                android:id="@+id/textView73"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="140dp"
-                android:text="TIME ENDED" />
-
-            <ImageView
-                android:id="@+id/imageView32"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="300dp"
-                android:layout_marginTop="150dp"
-                app:srcCompat="@drawable/ic_bookmark" />
-
-            <ImageView
-                android:id="@+id/imageView33"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="330dp"
-                android:layout_marginTop="150dp"
-                app:srcCompat="@drawable/ic_share" />
-
-            <ImageView
-                android:id="@+id/imageView34"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="360dp"
-                android:layout_marginTop="150dp"
-                app:srcCompat="@drawable/ic_delete" />
-
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/relativeLayout4"
-            android:layout_width="397dp"
-            android:layout_height="185dp"
-            android:layout_marginStart="7dp"
-            android:layout_marginTop="9dp">
-
-            <TextView
-                android:id="@+id/date"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="20dp"
-                android:text="1 May 2023"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/time"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="40dp"
-                android:text="Time" />
-
-            <TextView
-                android:id="@+id/type"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="80dp"
-                android:text="TYPE" />
-
-            <TextView
-                android:id="@+id/calories"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="109dp"
-                android:text="CALORIES" />
-
-            <TextView
-                android:id="@+id/time_end"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="140dp"
-                android:text="TIME ENDED" />
-
-            <ImageView
-                android:id="@+id/bookmark"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="300dp"
-                android:layout_marginTop="150dp"
-                app:srcCompat="@drawable/ic_bookmark" />
-
-            <ImageView
-                android:id="@+id/share"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="330dp"
-                android:layout_marginTop="150dp"
-                app:srcCompat="@drawable/ic_share" />
-
-            <ImageView
-                android:id="@+id/delete"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="360dp"
-                android:layout_marginTop="150dp"
-                app:srcCompat="@drawable/ic_delete" />
-        </RelativeLayout>
-    </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
