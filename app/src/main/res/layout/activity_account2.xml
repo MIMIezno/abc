@@ -63,7 +63,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
 
         <ImageView
-            android:id="@+id/imageView13"
+            android:id="@+id/profilepic"
             android:layout_width="match_parent"
             android:layout_height="136dp"
             app:srcCompat="@drawable/person_profile_icon" />
@@ -158,7 +158,7 @@
             app:layout_constraintHorizontal_bias="0.201" />
 
         <Button
-            android:id="@+id/btnlogout"
+            android:id="@+id/btnsave"
             android:layout_width="350dp"
             android:layout_height="50dp"
             android:layout_marginLeft="28dp"

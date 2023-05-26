@@ -118,7 +118,7 @@
             android:onClick="openRecipes">
 
             <ImageView
-                android:id="@+id/imageView5"
+                android:id="@+id/meal"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 app:srcCompat="@drawable/ic_meal" />
@@ -146,15 +146,15 @@
     <LinearLayout
         android:layout_width="195dp"
         android:layout_height="68dp"
-        android:orientation="horizontal"
         android:layout_marginLeft="180dp"
         android:layout_marginTop="-200dp"
-        tools:layout_editor_absoluteX="201dp"
-        tools:layout_editor_absoluteY="31dp"
-        tools:ignore="MissingConstraints"
         android:clickable="true"
         android:focusable="true"
-        android:onClick="openAccount">
+        android:onClick="openAccount"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="201dp"
+        tools:layout_editor_absoluteY="31dp">
 
         <RelativeLayout
             android:layout_width="113dp"
@@ -162,6 +162,7 @@
             android:gravity="center_vertical">
 
             <TextView
+                android:id="@+id/username"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Hello User!"
@@ -170,10 +171,12 @@
 
         </RelativeLayout>
 
-        <ImageView
-            android:id="@+id/imageView5"
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profile"
             android:layout_width="75dp"
             android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:shapeAppearance="@style/circular"
             app:srcCompat="@drawable/person_profile_icon"
             tools:ignore="DuplicateIds" />
 
@@ -430,7 +433,6 @@
                         android:background="@android:color/transparent"
                         android:clickable="true"
                         android:focusable="true"
-                        android:onClick="openReminder"
                         android:contentDescription="calendar"/>
 
                 </FrameLayout>
