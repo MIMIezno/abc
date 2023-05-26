@@ -1,20 +1,46 @@
 package com.example.workeatwork;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
-import android.text.SpannableString;
-import android.text.Spanned;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class Homepage extends AppCompatActivity {
+
+    ImageView profile;
+    TextView Uname;
+    SharedPreferences sharedPreferences;
+
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homepage);
+        profile = findViewById(R.id.profile);
+
+        //update
+        Uname = findViewById(R.id.username);
+
+        sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
+
+        String updatedUsername = sharedPreferences.getString("username", "");
+        if (!updatedUsername.isEmpty()) {
+            Uname.setText(updatedUsername);
+        }
+
+
+        String imageUriString = getIntent().getStringExtra("profile_image_uri");
+        if (imageUriString != null) {
+            Uri imageUri = Uri.parse(imageUriString);
+            profile.setImageURI(imageUri);
+        }
+
+
     }
 
     public void openBlog(View view) {

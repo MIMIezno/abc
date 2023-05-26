@@ -9,6 +9,7 @@
     tools:context=".Account">
 
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="90dp"
@@ -61,10 +62,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
 
-        <ImageView
-            android:id="@+id/imageView13"
-            android:layout_width="match_parent"
+        <com.google.android.material.imageview.ShapeableImageView
+            app:shapeAppearance="@style/circular"
+            android:scaleType="fitXY"
+            android:id="@+id/profilepic"
+            android:layout_width="183dp"
             android:layout_height="136dp"
+            android:layout_gravity="center"
             app:srcCompat="@drawable/person_profile_icon" />
 
         <TextView
@@ -83,7 +87,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:text="Change Profile photo"
+            android:text="Tap image to Change Profile photo"
             android:textSize="16sp" />
 
         <View
@@ -108,41 +112,18 @@
 
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/first_name"
+            android:id="@+id/newname"
             android:layout_width="345dp"
             android:layout_height="50dp"
-            android:layout_marginTop="15dp"
             android:layout_gravity="center"
+            android:layout_marginTop="15dp"
             android:background="@drawable/custom_enter"
             android:hint="@string/first_name"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.201" />
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/last_name"
-
-            android:layout_width="345dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="15dp"
-            android:layout_gravity="center"
-            android:background="@drawable/custom_enter"
-            android:hint="@string/last_name"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.201" />
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/email_add"
-            android:layout_width="345dp"
-            android:layout_height="51dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/custom_enter"
-            android:hint="@string/email_add"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.201" />
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/pass_word"
+            android:id="@+id/newpassword"
             android:layout_width="345dp"
             android:layout_height="51dp"
             android:layout_gravity="center"
@@ -153,15 +134,14 @@
             app:layout_constraintHorizontal_bias="0.201" />
 
         <Button
-            android:id="@+id/btnlogout"
+            android:id="@+id/btnsave"
             android:layout_width="289dp"
             android:layout_height="48dp"
             android:layout_marginLeft="64dp"
             android:layout_marginTop="29dp"
             android:clickable="true"
             android:focusable="true"
-            android:onClick="openLogin"
-            android:text="Log Out" />
+            android:text="Save profile" />
 
 
     </LinearLayout>

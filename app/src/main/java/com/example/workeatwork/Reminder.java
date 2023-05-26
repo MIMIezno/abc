@@ -1,11 +1,10 @@
 package com.example.workeatwork;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ProgressBar;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Reminder extends AppCompatActivity {
 
