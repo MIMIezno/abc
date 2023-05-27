@@ -3,11 +3,9 @@ package com.example.workeatwork;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.os.SystemClock;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Chronometer;
 import android.widget.NumberPicker;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -95,9 +93,8 @@ public class Goal extends AppCompatActivity {
         int minutes = (int) (milliseconds / 1000) / 60;
         int seconds = (int) (milliseconds / 1000) % 60;
 
-        String timeLeft = String.format("%02d:%02d", minutes, seconds);
-        additionalInfoTextView.setText(timeLeft);
-        additionalInfoTextView.setGravity(Gravity.CENTER);
+        minutesPicker.setValue(minutes);
+        secondsPicker.setValue(seconds);
     }
 
 
