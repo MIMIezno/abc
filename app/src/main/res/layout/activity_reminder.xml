@@ -7,40 +7,52 @@
     android:background="@drawable/bg2"
     tools:context=".Reminder">
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="52dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="30dp"
-        android:background="@drawable/circle_btn"
-        android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="26dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:onClick="openHomepage"
-        android:contentDescription="return">
+    <RelativeLayout
+        android:layout_width="160dp"
+        android:layout_height="90dp">
 
-        <ImageView
-            android:layout_width="34dp"
+        <TextView
+            android:id="@+id/textView66"
+            android:layout_width="89dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="45dp"
+            android:text="Reminders"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="52dp"
             android:layout_height="55dp"
-            android:layout_gravity="center"
-            android:src="@drawable/ic_prev" />
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/circle_btn"
+            android:clickable="true"
+            android:contentDescription="return"
+            android:focusable="true"
+            android:onClick="openHomepage"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="26dp">
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_prev" />
 
 
-
-    </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/relativeLayout6"
         android:layout_width="411dp"
         android:layout_height="112dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginLeft="-79dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="-160dp">
 
         <ProgressBar
             android:id="@+id/progressBar"
@@ -55,11 +67,14 @@
 
         <ImageView
             android:id="@+id/add"
-            android:layout_width="29dp"
-            android:layout_height="31dp"
-            android:layout_marginStart="320dp"
-            android:layout_marginTop="30dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="add"
+            android:onClick="addTask"
             app:srcCompat="@drawable/ic_plus" />
+
 
         <TextView
             android:id="@+id/textView57"
@@ -72,7 +87,7 @@
     </RelativeLayout>
 
     <LinearLayout
-        android:layout_width="414dp"
+        android:layout_width="410dp"
         android:layout_height="509dp"
         android:layout_marginTop="200dp"
         android:orientation="vertical"
@@ -86,163 +101,61 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="40dp"
             android:layout_marginTop="20dp"
-            android:text="6/10 task completed"
+            android:text=" / 1 task completed"
             android:textStyle="bold" />
 
-        <RelativeLayout
-            android:layout_width="354dp"
-            android:layout_height="74dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/task_bg">
 
-            <CheckBox
-                android:id="@+id/checkBox"
-                android:layout_width="352dp"
-                android:layout_height="58dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="8dp"
-                android:button="@drawable/custom_checkbox"
-                android:buttonTint="@color/black"
-                android:padding="10dp"
-                android:text="First Workout" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="lists">
 
-            <ImageView
-                android:id="@+id/imageView15"
-                android:layout_width="25dp"
-                android:layout_height="29dp"
-                android:layout_marginStart="310dp"
-                android:layout_marginTop="30dp"
-                app:srcCompat="@drawable/edit_document_icon" />
+            <LinearLayout
+                android:id="@+id/containerLayout"
+                android:layout_width="410dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
+                <!-- Contents inside the scrollable container -->
 
-        </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/referenceRelativeLayout"
+                    android:layout_width="354dp"
+                    android:layout_height="74dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/task_bg">
 
-        <RelativeLayout
-            android:layout_width="354dp"
-            android:layout_height="74dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/task_bg">
+                    <CheckBox
+                        android:id="@+id/checkBox"
+                        android:layout_width="150dp"
+                        android:layout_height="58dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="8dp"
+                        android:button="@drawable/custom_checkbox"
+                        android:buttonTint="@color/black"
+                        android:padding="10dp"
+                        android:text="First Task" />
 
-            <CheckBox
-                android:id="@+id/checkBox2"
-                android:layout_width="352dp"
-                android:layout_height="58dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="8dp"
-                android:button="@drawable/custom_checkbox"
-                android:buttonTint="@color/black"
-                android:padding="10dp"
-                android:text=" First Workout" />
+                    <ImageView
+                        android:id="@+id/imageView15"
+                        android:layout_width="25dp"
+                        android:layout_height="29dp"
+                        android:layout_marginStart="310dp"
+                        android:layout_marginTop="30dp"
+                        app:srcCompat="@drawable/edit_document_icon" />
 
-            <ImageView
-                android:id="@+id/imageView28"
-                android:layout_width="25dp"
-                android:layout_height="29dp"
-                android:layout_marginStart="310dp"
-                android:layout_marginTop="30dp"
-                app:srcCompat="@drawable/edit_document_icon" />
+                </RelativeLayout>
 
 
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="354dp"
-            android:layout_height="74dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/task_bg">
+            </LinearLayout>
 
 
-            <CheckBox
-                android:id="@+id/checkBox3"
-                android:layout_width="352dp"
-                android:layout_height="58dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="8dp"
-                android:button="@drawable/custom_checkbox"
-                android:buttonTint="@color/black"
-                android:padding="10dp"
-                android:text=" First Workout" />
-
-            <ImageView
-                android:id="@+id/imageView35"
-                android:layout_width="25dp"
-                android:layout_height="29dp"
-                android:layout_marginStart="310dp"
-                android:layout_marginTop="30dp"
-                app:srcCompat="@drawable/edit_document_icon" />
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="354dp"
-            android:layout_height="74dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/task_bg">
-
-            <CheckBox
-                android:id="@+id/checkBox4"
-                android:layout_width="352dp"
-                android:layout_height="58dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="8dp"
-                android:button="@drawable/custom_checkbox"
-                android:buttonTint="@color/black"
-                android:padding="10dp"
-                android:text=" First Workout" />
-
-            <ImageView
-                android:id="@+id/imageView36"
-                android:layout_width="25dp"
-                android:layout_height="29dp"
-                android:layout_marginStart="310dp"
-                android:layout_marginTop="30dp"
-                app:srcCompat="@drawable/edit_document_icon" />
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="354dp"
-            android:layout_height="74dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/task_bg">
-
-            <CheckBox
-                android:id="@+id/checkBox5"
-                android:layout_width="352dp"
-                android:layout_height="58dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="8dp"
-                android:button="@drawable/custom_checkbox"
-                android:buttonTint="@color/black"
-                android:padding="10dp"
-                android:text=" First Workout" />
-
-            <ImageView
-                android:id="@+id/imageView37"
-                android:layout_width="25dp"
-                android:layout_height="29dp"
-                android:layout_marginStart="310dp"
-                android:layout_marginTop="30dp"
-                app:srcCompat="@drawable/edit_document_icon" />
+        </ScrollView>
 
 
-        </RelativeLayout>
+
 
     </LinearLayout>
-
-    <TextView
-        android:id="@+id/textView66"
-        android:layout_width="89dp"
-        android:layout_height="32dp"
-        android:layout_marginLeft="-330dp"
-        android:layout_marginTop="50dp"
-        android:text="Reminders"
-        android:textSize="16sp"
-        android:textStyle="bold" />
 
 </LinearLayout>
