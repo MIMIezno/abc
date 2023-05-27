@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg2"
+    tools:context=".Calendar">
+
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_marginTop="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="137dp">
+
+        <EditText
+            android:id="@+id/textEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="58dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:ems="10"
+            android:hint="Enter Event"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnEventSave"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="250dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="buttonSaveEvent"
+            android:text="Save Event" />
+    </RelativeLayout>
+
+
+</LinearLayout>

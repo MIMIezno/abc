@@ -9,4 +9,6 @@
     <string name="pass_word"> Password</string>
     <string name="first_name"> First Name</string>
     <string name="last_name"> Last Name</string>
+    <string name="back"><![CDATA[<--]]></string>
+    <string name="forward"><![CDATA[-->]]></string>
 </resources>

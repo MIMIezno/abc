@@ -53,10 +53,6 @@ public class Homepage extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void openReminder(View view) {
-        Intent intent = new Intent(Homepage.this, Reminder.class);
-        startActivity(intent);
-    }
 
     public void openAccount(View view) {
         Intent intent = new Intent(Homepage.this, Account.class);
@@ -72,5 +68,12 @@ public class Homepage extends AppCompatActivity {
         Intent intent = new Intent(Homepage.this, Recipes.class);
         startActivity(intent);
     }
+
+    public void openCalendar(View view) {
+        Intent intent = new Intent(Homepage.this, Calendar.class);
+        startActivity(intent);
+    }
+
+
 
 }
