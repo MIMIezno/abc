@@ -45,7 +45,8 @@
             android:layout_height="49dp"
             android:orientation="horizontal"
             android:clickable="true"
-            android:focusable="true">
+            android:focusable="true"
+            android:onClick="openGoals">
 
             <ImageView
                 android:id="@+id/imageView3"

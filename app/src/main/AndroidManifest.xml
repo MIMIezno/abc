@@ -48,6 +48,9 @@
             android:name=".Blog"
             android:exported="false" />
         <activity
+            android:name=".Goal"
+            android:exported="false" />
+        <activity
             android:name=".Food"
             android:exported="false" />
         <activity
