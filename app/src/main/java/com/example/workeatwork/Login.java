@@ -17,7 +17,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class Login extends AppCompatActivity {
-    private TextInputEditText emailEditText, passwordEditTex;
+     TextInputEditText emailEditText, passwordEditTex;
 
     Button login;
 
@@ -66,11 +66,18 @@ public class Login extends AppCompatActivity {
             }
         });
 
-     /*   emailEditText = findViewById(R.id.email);
-        passwordEditText = findViewById(R.id.password);*/
+
     }
+    public void openForgot(View view) {
+        Intent intent = new Intent(Login.this, Forgot.class);
+        startActivity(intent);
+    }
+
 }
 
+
+/*   emailEditText = findViewById(R.id.email);
+        passwordEditText = findViewById(R.id.password);*/
 
 
 

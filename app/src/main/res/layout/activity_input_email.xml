@@ -49,7 +49,7 @@
       android:layout_height="wrap_content"
       android:layout_marginStart="41dp"
       android:layout_marginTop="16dp"
-      android:text="8 character minimun"
+      android:text="8 character minimum"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/password" />
 

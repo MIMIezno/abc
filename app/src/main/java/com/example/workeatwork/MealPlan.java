@@ -60,7 +60,10 @@ public class MealPlan extends AppCompatActivity {
         recordList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                selectedPosition = position;
+                String selectedNote = recordsList.get(position);
+                Intent intent = new Intent(MealPlan.this, Note.class);
+                intent.putExtra("noteText", selectedNote);
+                startActivityForResult(intent, REQUEST_CODE_NOTE);
             }
         });
     }

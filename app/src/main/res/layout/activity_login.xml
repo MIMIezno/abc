@@ -63,6 +63,7 @@
 
     <TextView
         android:id="@+id/textViewForgotpass"
+        android:onClick="openForgot"
         android:layout_width="187dp"
         android:layout_height="30dp"
         android:layout_marginStart="177dp"
