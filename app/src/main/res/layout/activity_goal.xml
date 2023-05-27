@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_goal.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    tools:context=".Goal">
+
+    <RelativeLayout
+        android:layout_width="160dp"
+        android:layout_height="90dp">
+
+        <TextView
+            android:id="@+id/textView66"
+            android:layout_width="89dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="45dp"
+            android:text="Goal"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="52dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/circle_btn"
+            android:clickable="true"
+            android:contentDescription="return"
+            android:focusable="true"
+            android:onClick="openHomepage"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="26dp">
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_prev" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/additionalInfoTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:background="#80FFFFFF"
+            android:padding="16dp"
+            android:text="Your Current Calories Burnt: 500\nGOAL: 1000"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <NumberPicker
+                android:id="@+id/minutesPicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90dp"
+                android:text="min" />
+
+            <NumberPicker
+                android:id="@+id/secondsPicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90dp"
+                android:text="sec" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:layout_marginTop="16dp"
+            android:onClick="startTimer" />
+
+        <Button
+            android:id="@+id/stopButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop"
+            android:layout_marginTop="16dp"
+            android:onClick="stopTimer"
+            android:enabled="false" />
+    </LinearLayout>
+
+
+</RelativeLayout>
