@@ -73,10 +73,7 @@ public class Homepage extends AppCompatActivity {
         Intent intent = new Intent(Homepage.this, Calendar.class);
         startActivity(intent);
     }
-    public void openGoals(View view) {
-        Intent intent = new Intent(Homepage.this, Goal.class);
-        startActivity(intent);
-    }
+
 
 
 }
