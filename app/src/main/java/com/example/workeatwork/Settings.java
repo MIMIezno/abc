@@ -1,27 +1,21 @@
 package com.example.workeatwork;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.graphics.text.LineBreaker;
-import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.text.Layout;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.RatingBar;
-import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Settings extends AppCompatActivity {
     private PopupWindow popupWindow;
@@ -50,7 +44,7 @@ public class Settings extends AppCompatActivity {
         }
         // Create the popup window
         int width = 800;
-        int height = 1200;
+        int height = 1300;
         popupWindow = new PopupWindow(popupView, width, height, true);
 
         // Set the window to appear in the center
@@ -71,7 +65,7 @@ public class Settings extends AppCompatActivity {
         }
         // Create the popup window
         int width = 800;
-        int height = 1200;
+        int height = 1300;
         popupWindow = new PopupWindow(popupView, width, height, true);
 
         // Set the window to appear in the center
@@ -92,7 +86,7 @@ public class Settings extends AppCompatActivity {
         }
         // Create the popup window
         int width = 800;
-        int height = 1200;
+        int height = 1300;
         popupWindow = new PopupWindow(popupView, width, height, true);
 
         // Set the window to appear in the center
@@ -104,7 +98,7 @@ public class Settings extends AppCompatActivity {
 
         // Create the popup window
         int width = 800;
-        int height = 1200;
+        int height = 1500;
         popupWindow = new PopupWindow(popupView, width, height, true);
 
         // Set the window to appear in the center
@@ -173,8 +167,8 @@ public class Settings extends AppCompatActivity {
             View popupView = inflater.inflate(R.layout.popup_layout, null);
 
             // Create the popup window
-            int width = 800;
-            int height = 1200;
+        int width = 800;
+        int height = 1300;
             popupWindow = new PopupWindow(popupView, width, height, true);
 
             // Set the window to appear in the center
@@ -244,7 +238,7 @@ public class Settings extends AppCompatActivity {
 
         // Create the popup window
         int width = 800;
-        int height = 1200;
+        int height = 1500;
         popupWindow = new PopupWindow(popupView, width, height, true);
 
         // Set the window to appear in the center
