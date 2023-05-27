@@ -79,5 +79,9 @@ public class Homepage extends AppCompatActivity {
         startActivity(intent);
     }
 
-
+    public void openMealPlan(View view) {
+        Intent intent = new Intent(Homepage.this, MealPlan.class);
+        startActivity(intent);
+    }
+    //comment
 }
