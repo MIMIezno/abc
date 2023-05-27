@@ -64,16 +64,18 @@ public class Homepage extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void openRecipes(View view) {
-        Intent intent = new Intent(Homepage.this, Recipes.class);
-        startActivity(intent);
-    }
 
     public void openCalendar(View view) {
         Intent intent = new Intent(Homepage.this, Calendar.class);
         startActivity(intent);
     }
 
+    //for meal plan
+
+    public void openMealPlan(View view) {
+        Intent intent = new Intent(Homepage.this, MealPlan.class);
+        startActivity(intent);
+    }
 
 
 }

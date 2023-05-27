@@ -113,7 +113,8 @@
             android:orientation="horizontal"
             android:clickable="true"
             android:focusable="true"
-            android:onClick="openRecipes">
+            android:onClick="openMealPlan"
+            >
 
             <ImageView
                 android:id="@+id/meal"
