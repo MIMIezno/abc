@@ -83,4 +83,5 @@ public class Homepage extends AppCompatActivity {
         Intent intent = new Intent(Homepage.this, MealPlan.class);
         startActivity(intent);
     }
+    //comment
 }
