@@ -1,7 +1,6 @@
 package com.example.workeatwork;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 
@@ -15,7 +14,7 @@ public class Recipes extends AppCompatActivity {
         setContentView(R.layout.activity_recipes);
     }
 
-    public void openSaveFood(View view) {
+    public void openFood(View view) {
         Intent intent = new Intent(Recipes.this, Food.class);
         startActivity(intent);
     }

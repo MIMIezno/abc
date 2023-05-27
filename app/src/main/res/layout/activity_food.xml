@@ -11,7 +11,7 @@
         android:layout_height="300dp"
         android:orientation="horizontal"
         android:padding="8dp"
-        >
+        android:background="#409F2B68">
 
         <!-- Food Image -->
         <ImageView
@@ -54,7 +54,7 @@
             android:id="@+id/bookmarkButton1"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:src="@drawable/saved_icon"
+            android:src="@drawable/bookmark"
             android:layout_marginTop="230dp"
             android:onClick="onBookmarkButtonClick"
             android:contentDescription="save"/>
